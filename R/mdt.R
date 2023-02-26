@@ -72,7 +72,7 @@
 mdt <- function(num_items = 20L,
                 take_training = TRUE,
                 label = "MDT",
-                feedback = mdt.feedback.no_score(),
+                feedback = mdt.feedback.simple_score(),
                 media_dir = "http://media.gold-msi.org/test_materials/MDT/v4",
                 next_item.criterion = "bOpt",
                 next_item.estimator = "BM",
