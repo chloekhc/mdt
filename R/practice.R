@@ -7,18 +7,18 @@ practice <- function(media_dir) {
       list(
         psychTestR::audio_NAFC_page(
           label = "practice_question",
-          prompt = psychTestR::i18n("AMDI_0013_I_0001_1"),
+          prompt = div(p(img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/11.jpg", width="100%")), p("")),
           url = file.path(media_dir, "examples", paste0(x$id, ".mp3")),
           choices = c("1", "2", "3"),
           arrange_choices_vertically = FALSE,
           save_answer = FALSE
         ),
         psychTestR::reactive_page(function(answer, ...) {
-          psychTestR::one_button_page(shiny::div(
-            shiny::p(shiny::HTML(psychTestR::i18n(
-              if (answer == x$answer) "AMDI_0006_I_0001_1" else "AMDI_0010_I_0001_1"))),
-            if (answer != x$answer) {
-              shiny::p(shiny::HTML(psychTestR::i18n(
-                if (x$answer == "3") "AMDI_0012_I_0001_1" else "AMDI_0007_I_0001_1"
-              )))
-            }), button_text = psychTestR::i18n("AMDI_0016_I_0001_1"))}))}))}
+          psychTestR::one_button_page(
+              if (answer == x$answer){ img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/12.jpg", width="100%") } else
+                 if (answer != x$answer){
+                   if (x$answer == "3") {img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/15.jpg", width="100%")} else
+                     {img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/13.jpg", width="100%")}
+                 }, button_text = psychTestR::i18n("AMDI_0016_I_0001_1"))}
+      ))}
+    ))}

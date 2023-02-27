@@ -85,9 +85,7 @@ get_prompt <- function(item_number, num_items_in_test) {
                      "?" else
                        num_items_in_test))
     ),
-    shiny::p(
-      psychTestR::i18n("AMDI_0013_I_0001_1")
-    ))
+    img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/18.jpg", width="100%"))
 }
 
 get_choices <- function() {

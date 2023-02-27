@@ -27,7 +27,7 @@ mdt.feedback.simple_score <- function(dict = mdt::mdt_dict) {
   psychTestR::new_timeline(
     psychTestR::reactive_page(function(answer, ...) {
       psychTestR::one_button_page(shiny::div(
-        shiny::p(psychTestR::i18n("AMDI_0014_I_0001_1")),
+        img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/16.jpg", width="100%"),
         shiny::p(psychTestR::i18n("AMDI_0017_I_0001_1"),
                  shiny::strong(round(answer$ability, digits = 2)))
       ))
