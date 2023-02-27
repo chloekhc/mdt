@@ -44,19 +44,19 @@ instructions <- function(media_dir, num_items) {
     psychTestR::code_block(function(state, ...) {
       psychTestR::set_local("do_intro", TRUE, state)
     }),
+    info_image_page("https://decpsychloe.me/img/1.jpg"),
+    info_image_page("https://decpsychloe.me/img/2.jpg"),
+    info_image_page("https://decpsychloe.me/img/3.jpg"),
+    audio_ex_image_page("https://decpsychloe.me/img/4.jpg", file.path(media_dir, "examples/ex1.mp3")),
+    info_image_page("https://decpsychloe.me/img/5.jpg"),
+    info_image_page("https://decpsychloe.me/img/6.jpg"),
+    info_image_page("https://decpsychloe.me/img/7.jpg"),
+    info_image_page("https://decpsychloe.me/img/8.jpg"),
+    audio_ex_image_page1("https://decpsychloe.me/img/9.jpg", file.path(media_dir, "examples/ex1.mp3")),
+    info_image_page("https://decpsychloe.me/img/10.jpg"),
     psychTestR::while_loop(
       test = function(state, ...) psychTestR::get_local("do_intro", state),
       logic = c(
-        info_image_page("https://decpsychloe.me/img/1.jpg"),
-        info_image_page("https://decpsychloe.me/img/2.jpg"),
-        info_image_page("https://decpsychloe.me/img/3.jpg"),
-        audio_ex_image_page("https://decpsychloe.me/img/4.jpg", file.path(media_dir, "examples/ex1.mp3")),
-        info_image_page("https://decpsychloe.me/img/5.jpg"),
-        info_image_page("https://decpsychloe.me/img/6.jpg"),
-        info_image_page("https://decpsychloe.me/img/7.jpg"),
-        info_image_page("https://decpsychloe.me/img/8.jpg"),
-        audio_ex_image_page1("https://decpsychloe.me/img/9.jpg", file.path(media_dir, "examples/ex1.mp3")),
-        info_image_page("https://decpsychloe.me/img/10.jpg"),
         practice(media_dir),
         ask_repeat()
       )),
