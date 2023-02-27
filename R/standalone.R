@@ -27,11 +27,10 @@ standalone_mdt <- function(title = "Melody discrimination test",
       dict = dict
     ),
     mdt::mdt(dict = dict, ...),
-    psychTestR::elt_save_results_to_disk(complete = TRUE),
+    # psychTestR::elt_save_results_to_disk(complete = TRUE),
     psychTestR::new_timeline(
-      psychTestR::final_page(shiny::p(
-        psychTestR::i18n("results_have_been_saved"),
-        psychTestR::i18n("you_may_close_browser"))
+      psychTestR::final_page(
+        tags$a(href="http://decpsychloe.me/cabat/", "Next Step")
       ), dict = dict)
   )
 
