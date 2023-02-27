@@ -85,7 +85,7 @@ get_prompt <- function(item_number, num_items_in_test) {
                      "?" else
                        num_items_in_test))
     ),
-    img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/18.jpg", width="100%"))
+    img(src = "https://decpsychloe.me/img/18.jpg", width="100%"))
 }
 
 get_choices <- function() {
