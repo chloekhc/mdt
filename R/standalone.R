@@ -21,11 +21,6 @@ standalone_mdt <- function(title = "Melody discrimination test",
                            dict = mdt::mdt_dict,
                            ...) {
   elts <- c(
-    psychTestR::new_timeline(
-      psychTestR::get_p_id(prompt = psychTestR::i18n("enter_p_id"),
-                           button_text = psychTestR::i18n("AMDI_0016_I_0001_1")),
-      dict = dict
-    ),
     mdt::mdt(dict = dict, ...),
     # psychTestR::elt_save_results_to_disk(complete = TRUE),
     psychTestR::new_timeline(
