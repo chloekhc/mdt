@@ -19,4 +19,4 @@ Suggests:
     testthat (>= 2.1.1),
     usethis (>= 1.5.0)
 RoxygenNote: 7.1.1
-Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT
+Remotes: chloekhc/psychTestR, pmcharrison/psychTestRCAT
