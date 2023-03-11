@@ -34,7 +34,8 @@ show_item <- function(media_dir) {
       admin_ui = get_admin_ui(item),
       save_answer = FALSE,
       wait = TRUE,
-      arrange_choices_vertically = FALSE
+      arrange_choices_vertically = FALSE,
+      autoplay = FALSE
     )
   }
 }

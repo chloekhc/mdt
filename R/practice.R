@@ -11,7 +11,8 @@ practice <- function(media_dir) {
           url = file.path(media_dir, "examples", paste0(x$id, ".mp3")),
           choices = c("1", "2", "3"),
           arrange_choices_vertically = FALSE,
-          save_answer = FALSE
+          save_answer = FALSE,
+          autoplay = FALSE
         ),
         psychTestR::reactive_page(function(answer, ...) {
           psychTestR::one_button_page(
