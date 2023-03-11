@@ -35,7 +35,8 @@ audio_ex_image_page1 <- function(image_url, url) {
     choices = psychTestR::i18n("AMDI_0016_I_0001_1"),
     url = url,
     show_controls = FALSE,
-    save_answer = FALSE
+    save_answer = FALSE,
+    autoplay = FALSE
   )
 }
 
