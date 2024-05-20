@@ -45,7 +45,7 @@ instructions <- function(media_dir, num_items) {
     psychTestR::code_block(function(state, ...) {
       psychTestR::set_local("do_intro", TRUE, state)
     }),
-    info_image_page("https://decpsychloe.me/img/1.jpg"),
+    info_image_page("https://github.com/chloekhc/mdt/blob/master/fig/1.jpg?raw=true"),
     info_image_page("https://decpsychloe.me/img/2.jpg"),
     info_image_page("https://decpsychloe.me/img/3.jpg"),
     audio_ex_image_page("https://decpsychloe.me/img/4.jpg", file.path(media_dir, "examples/ex1.mp3")),
