@@ -86,8 +86,8 @@ get_prompt <- function(item_number, num_items_in_test) {
                      "?" else
                        num_items_in_test))
     ),
-    if (item_number==11) (img(src = "https://decpsychloe.me/img/21.jpg", width="100%"))
-    else (img(src = "https://decpsychloe.me/img/18.jpg", width="100%"))
+    if (item_number==11) (img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/21.jpg", width="100%"))
+    else (img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/18.jpg", width="100%"))
 
 
     )
