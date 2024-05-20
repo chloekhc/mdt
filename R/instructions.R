@@ -46,26 +46,26 @@ instructions <- function(media_dir, num_items) {
       psychTestR::set_local("do_intro", TRUE, state)
     }),
     info_image_page("https://github.com/chloekhc/mdt/blob/master/fig/1.jpg?raw=true"),
-    info_image_page("https://decpsychloe.me/img/2.jpg"),
-    info_image_page("https://decpsychloe.me/img/3.jpg"),
-    audio_ex_image_page("https://decpsychloe.me/img/4.jpg", file.path(media_dir, "examples/ex1.mp3")),
-    info_image_page("https://decpsychloe.me/img/8.jpg"),
-    audio_ex_image_page1("https://decpsychloe.me/img/9.jpg", file.path(media_dir, "examples/ex1.mp3")),
-    info_image_page("https://decpsychloe.me/img/10.jpg"),
+    info_image_page("https://github.com/chloekhc/mdt/blob/master/fig/2.jpg?raw=true"),
+    info_image_page("https://github.com/chloekhc/mdt/blob/master/fig/3.jpg?raw=true"),
+    audio_ex_image_page("https://github.com/chloekhc/mdt/blob/master/fig/4.jpg?raw=true", file.path(media_dir, "examples/ex1.mp3")),
+    info_image_page("https://github.com/chloekhc/mdt/blob/master/fig/8.jpg?raw=true"),
+    audio_ex_image_page1("https://github.com/chloekhc/mdt/blob/master/fig/9.jpg?raw=true", file.path(media_dir, "examples/ex1.mp3")),
+    info_image_page("https://github.com/chloekhc/mdt/blob/master/fig/10.jpg?raw=true"),
     psychTestR::while_loop(
       test = function(state, ...) psychTestR::get_local("do_intro", state),
       logic = c(
         practice(media_dir),
         ask_repeat()
       )),
-    psychTestR::one_button_page(div(p(img(src = "https://decpsychloe.me/img/17.jpg", width="100%")), p("")))
+    psychTestR::one_button_page(div(p(img(src = "https://github.com/chloekhc/mdt/blob/master/fig/17.jpg?raw=true", width="100%")), p("")))
   )
 }
 
 ask_repeat <- function() {
   psychTestR::NAFC_page(
     label = "ask_repeat",
-    prompt = div(p(img(src = "https://decpsychloe.me/img/16.jpg", width="100%")), p("")),
+    prompt = div(p(img(src = "https://github.com/chloekhc/mdt/blob/master/fig/16.jpg?raw=true", width="100%")), p("")),
     choices = c("go_back", "continue"),
     labels = lapply(c("AMDI_0008_R_0001_1", "AMDI_0008_R_0002_1"), psychTestR::i18n),
     save_answer = FALSE,
