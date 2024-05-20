@@ -25,7 +25,7 @@ standalone_mdt <- function(title = "Melody discrimination test",
     # psychTestR::elt_save_results_to_disk(complete = TRUE),
     psychTestR::new_timeline(
       psychTestR::final_page(
-        div(p(img(src = "https://decpsychloe.me/img/19.jpg", width="100%")), p(tags$a(href="http://decpsychloe.me/cabat/", "Next Step")))
+        div(p(img(src = "https://raw.githubusercontent.com/chloekhc/mdt/master/fig/19.jpg", width="100%")), p(tags$a(href="http://decpsychloe.me/cabat/", "Next Step")))
       ), dict = dict)
   )
 
